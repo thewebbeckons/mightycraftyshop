@@ -21,7 +21,7 @@ export default {
 .cart {
   position: fixed;
   z-index: 99;
-  top: 30px;
+  bottom: 30px;
   right: 30px;
   color: #0e0e0e;
   transition: opacity 0.5s ease-in;
