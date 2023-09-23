@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      prevHeight: 0
+      prevHeight: 0,
     }
   },
   mounted() {
@@ -29,34 +29,34 @@ export default {
         this.loaded()
         setTimeout(() => this.$nuxt.$loading.finish(), 1000)
       })
-    }    
+    }
   },
   methods: {
     loaded() {
       this.$store.commit('loaded')
     },
     beforeLeave(element) {
-      this.prevHeight = getComputedStyle(element).height;
+      this.prevHeight = getComputedStyle(element).height
     },
     enter(element) {
-      const { height } = getComputedStyle(element);
+      const { height } = getComputedStyle(element)
 
-      element.style.height = this.prevHeight;
+      element.style.height = this.prevHeight
 
       setTimeout(() => {
-        element.style.height = height;
-      });
+        element.style.height = height
+      })
     },
     afterEnter(element) {
-      element.style.height = 'auto';
+      element.style.height = 'auto'
     },
-  }
+  },
 }
 </script>
 
-<style lang="scss">
+<style>
 html {
-  font-family: $font;
+  font-family: 'Karla', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -72,9 +72,13 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .content {
   padding: 3rem 1rem;
-  border: solid 10px lighten($primary, 10%);
+  border: solid 10px #e61c25;
   min-height: 100vh;
 }
 .fade-enter-active,
@@ -87,7 +91,6 @@ html {
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
-
 </style>

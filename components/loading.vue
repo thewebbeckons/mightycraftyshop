@@ -9,7 +9,7 @@
 <script>
 export default {
   data: () => ({
-    loading: false
+    loading: false,
   }),
   methods: {
     start() {
@@ -17,15 +17,15 @@ export default {
     },
     finish() {
       this.loading = false
-    }
-  }
+    },
+  },
 }
 </script>
 
-<style lang="scss">
+<style>
 .loading-page {
   position: fixed;
-  border: solid 10px lighten($primary, 10%);
+  border: solid 10px #e61c25;
   min-height: 100vh;
   top: 0;
   left: 0;
@@ -41,7 +41,7 @@ export default {
 .lds-heart {
   display: inline-block;
   position: relative;
-  top:50%;
+  top: 50%;
   width: 80px;
   height: 80px;
   transform: rotate(45deg);
@@ -53,17 +53,17 @@ export default {
   position: absolute;
   width: 32px;
   height: 32px;
-  background: $primary;
+  background: #e61c25;
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .lds-heart div:after,
 .lds-heart div:before {
-  content: " ";
+  content: ' ';
   position: absolute;
   display: block;
   width: 32px;
   height: 32px;
-  background: $primary;
+  background: red;
 }
 .lds-heart div:before {
   left: -24px;
