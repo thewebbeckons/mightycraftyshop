@@ -37,6 +37,7 @@ export default {
   fontawesome: {
     icons: {
       solid: [
+        'faCoffee',
         'faHeart',
         'faCut',
         'faHandScissors',

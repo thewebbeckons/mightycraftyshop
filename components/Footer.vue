@@ -2,7 +2,7 @@
   <footer>
     <p></p>
     <p>
-      Made with <font-awesome-icon :icon="['fas', 'heart']" class="red" /> in
+      Made with <font-awesome-icon :icon="['fas', 'coffee']" class="brown" /> in
       Toronto by <a href="http://thewebbeckons.ca">thewebbeckons</a>
     </p>
   </footer>
@@ -18,8 +18,8 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
-footer .red {
-  color: #e61c25;
+footer .brown {
+  color: #3e3737;
 }
 footer a {
   color: #e61c25;
